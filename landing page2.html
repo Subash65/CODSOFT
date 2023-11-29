@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> product landing page </title>
+	<style>
+	body{
+	margin: 0;
+    padding: 0;
+	font-family: 'Arial', sans-serif;
+	background-image:url("https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D");
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center;
+	background-color:#FF1d58 ;
+	color:white;
+   }
+     header {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            padding: 20px;
+            text-align: center;
+			color:white;
+        }
+     nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+            padding: 10px;
+        }
+   nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Change to your desired hover color */
+        }
+
+    nav a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffcc00; /* Set to your desired color */
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+	section {
+            text-align: center;
+            padding: 50px;
+        }
+       .testimonial {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            margin-right: 20px;
+			width: 120px;
+			height: 100px;
+        }
+
+        .pricing {
+            background: rgba(255, 255, 255, 0);
+            padding: 50px;
+        }
+		 .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+       #why-choose .animated-image {
+    max-width: 20%; /* Adjust the width as needed */
+    border-radius: 8px;
+    margin: 10px; /* Added margin to separate the images */
+    transition: transform 0.3s ease-in-out;
+    }
+
+     #why-choose .animated-image:hover {
+    transform: scale(1.1);
+      }
+
+     /* Centering the image container */
+    .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       }
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FF1d58;
+      }
+             body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FF1d58;
+}
+
+.benefits {
+    text-align: center;
+    padding: 50px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.animated-image {
+    max-width: 20%; /* Adjust the width as needed */
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.animated-image:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+    
+                #how-to-use .image-container {
+    position: relative;
+    overflow: hidden;
+    }
+
+     #how-to-use .animated-image {
+    max-width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+     }
+ 
+    #how-to-use:hover .animated-image {
+    opacity: 1;
+    transform: translateY(0);
+     }
+	 /* Pricing Section Animation */
+       #pricing .animated-image {
+    max-width: 20%;
+	max-height: 40%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+     }
+
+     #pricing:hover .animated-image {
+    opacity: 1;
+    transform: scale(1);
+    }
+
+    /* Testimonials Section Animation */
+    #testimonials .testimonial {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+     }
+
+    #testimonials:hover .testimonial {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+   /* FAQ Section Animation */
+     #faq li {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+     #faq:hover li {
+    opacity: 1;
+    transform: translateX(0);
+     }
+
+    /* Contact Section Animation */
+    #contact p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    #contact:hover p {
+    opacity: 1;
+    transform: translateY(0);
+     }
+
+
+	
+        .contact {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+    </head>
+   <body>
+    <header>
+        <h1>SecureGuard Pro</h1>
+        <p><b>Your Smart Home Security Solution</b></p>
+    </header>
+
+    <nav>
+        <a href="#why-choose">Why Choose Us</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#how-to-use">How to Use</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="why-choose" class="why-choose">
+        <h2>Why Choose SecureGuard Pro</h2>
+		<div class="image-container">
+		<img src="https://th.bing.com/th/id/OIG._eNQHJM4QBaM65gSVaI.?pid=ImgGn" class="animated-image" alt="why chose image">
+		<img src="https://th.bing.com/th/id/OIG.icsgu2WEVyfosBGnY9be?w=270&h=270&c=6&r=0&o=5&dpr=1.1&pid=ImgGn" alt="Small Image" class="animated-image">
+		</div>
+        <p>SecureGuard Pro is your advanced smart home security system, providing unparalleled protection for your home and family. With real-time monitoring, instant alerts, and seamless integration with your smart devices, it's the ultimate solution for peace of mind</p>
+    </section>
+
+    <section id="benefits" class="benefits">
+	     <h2>Benefits</h2>
+        <div class="image-container">
+		<img src="https://th.bing.com/th/id/OIG.KGPPM_C1ZkM9oi0LTSWT?pid=ImgGn" class="animated-image" alt="Benefit Image">
+		</div>
+		<p>Experience easy installation, high-definition video surveillance, and a user-friendly interface. Join thousands of satisfied customers who trust SecureGuard Pro for their home security needs.</p>
+        </section>
+
+    <section id="how-to-use" class="how-to-use">
+        <h2>How to Use</h2>
+		<div class="image-container">
+		 <img src="https://th.bing.com/th/id/OIG.IakhFglvY8iuRJikwLX7?w=270&h=270&c=6&r=0&o=5&dpr=1.1&pid=ImgGn" alt="How to Use Image" class="animated-image">
+		 </div>
+		<p>SecureGuard Pro makes securing your home simple and effective. Here's how it works:</p>
+        <ol>
+            <li><b>Choose Your Plan:</b> Select a plan that meets your security requirements.</li><br>
+            <li><b>Install the System:</b> Easily install the SecureGuard Pro system in your home.</li><br>
+            <li><b>Connect Devices:</b> Integrate with your smart devices for a comprehensive security network.</li><br>
+            <li><b>Monitor Anywhere:</b> Access real-time monitoring and alerts from anywhere using our app.</li>
+        </ol>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Our Pricing</h2>
+		<div class="image-container">
+		<img src="https://th.bing.com/th/id/OIG._nE2h5aHPlg.VNPLKvpt?pid=ImgGn" alt="pricing image" class="animated-image">
+		</div>
+        <p>Choose the plan that best fits your needs and enjoy the benefits of SecureGuard Pro:</p>
+        <ul>
+            <li><b>Basic Plan:</b> $9.99/month - Essential security features</li><br>
+            <li><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Plan:</b> $19.99/month - Advanced monitoring and alerts</li><br>
+            <li><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium Plan:</b> $29.99/month - Full access to all features, including smart device integration</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <img src="https://th.bing.com/th/id/OIP.hLTThhxHPeGqFQVjpD1-hwHaE8?w=320&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Customer 1">
+            <p>"SecureGuard Pro transformed the way I feel about home security. The real-time alerts and HD surveillance give me confidence in my family's safety."</p>
+			<p class="testimonial-author">- John Doe, Happy Customer</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="https://th.bing.com/th/id/OIP.8FjJ1mIekRm6bGdauQ1iXAHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Customer 2">
+            <p>"I love how seamlessly SecureGuard Pro integrates with my other smart devices. It's the backbone of my connected home."</p>
+			<p class="testimonial-author">- Jane Smith, Satisfied User</p>
+			
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+		<p>Have questions? We have answers! Check out our FAQs:</p>
+		<ul>
+            <li><b>Q: Is SecureGuard Pro easy to install?</b><br><br>A: Yes, our system is designed for easy DIY installation. Follow the provided instructions, and you'll have it set up in no time.</li><br>
+            <li><b>Q: What happens if I experience issues with my system?</b><br><br>A: Our customer support team is available 24/7 to assist you. Contact us via phone or email, and we'll resolve any issues promptly.</li><br>
+            <li><b>Q: Can I customize my security settings?</b><br><br>A: Absolutely! SecureGuard Pro allows you to customize your security preferences through the user-friendly interface.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us! <br><br>call "7680014150" or mail "subash.kuncham21@gmail.com"</p>
+		</section>
+</body>
+</html>		
+		
